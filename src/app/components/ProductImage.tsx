@@ -16,7 +16,7 @@ export default function ProductImage({ product, fill }: ProductImageProps) {
             fill
             alt={product.title}
             className={`object-cover ${
-                loading ? 'scale-110 blur-3xl grayscale'
+                loading ? 'scale-110 blur-2xl grayscale'
                 : 'scale-100 blur-0 grayscale-0'
             }`}
             onLoadingComplete={() => setLoading(false)}
